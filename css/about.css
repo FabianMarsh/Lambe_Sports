@@ -3,9 +3,32 @@
     text-align: center;
     background: var(--ter-bg);
     color: var(--ter-txt);
+    .subheading {
+        font-weight: 300;
+    }
+}
+.about__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .about__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+@media all and (min-width: 1020px) {
+    .about__content {
+        flex-direction: row;
+    }
+    .about__content__text {
+        width: 50%;
+    }
 }
